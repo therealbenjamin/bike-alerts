@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  root 'home#index'
+  root 'reports#show'
+
+  get '/reports', to: 'reports#show'
 
   devise_for :users
 end
