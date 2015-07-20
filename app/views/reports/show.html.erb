@@ -1,8 +1,16 @@
-<h1>BikeWalkTN Hazard Reports</h1>
+<div class="row">
+	<div class="small-12 columns large-12 columns">
+		<h1 class="text-center">BikeWalkTN Hazard Reports</h1>
+	</div>
+</div>
 
-<%= form_for @report, url: {action: "create"}, html: {class: "nifty_form"} do |f| %>
-  <%= f.select(:feed, options_for_select(Report::FEED)) %>
-  <%= f.select(:incident_type, options_for_select(Report::INCIDENT_TYPE)) %>
-  <%= f.text_area :body, maxlength: 140, size: "60x12" %>
-  <%= f.submit "Create" %>
-<% end %>
+<div class="row">
+	<div class="small-12 columns large-12 columns">
+		<%= form_for @report, url: {action: "create"}, html: {class: "nifty_form"} do |f| %>
+		  <%= f.select(:feed, options_for_select(Report::FEED)) %>
+		  <%= f.select(:incident_type, options_for_select(Report::INCIDENT_TYPE)) %>
+		  <%= f.text_area :body, maxlength: 140, size: "60x12" %>
+		  <%= f.submit "Create" %>
+		<% end %>
+	</div>
+</div>

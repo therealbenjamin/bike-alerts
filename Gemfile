@@ -14,8 +14,7 @@ gem 'twitter', '~> 5.14.0'
 gem 'oauth'
 gem 'figaro'
 gem 'rails_12factor'
-gem 'bootstrap-sass', '~> 3.2.0'
-gem 'autoprefixer-rails'
+gem 'foundation-rails'
 
 group :development, :test do
   gem 'byebug'
