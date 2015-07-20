@@ -10,7 +10,9 @@
 		  <%= f.select(:feed, options_for_select(Report::FEED)) %>
 		  <%= f.select(:incident_type, options_for_select(Report::INCIDENT_TYPE)) %>
 		  <%= f.text_area :body, maxlength: 140, size: "60x12" %>
-		  <%= f.submit "Create" %>
+		  <div class="text-center">
+		  	<%= f.submit "Create", class: 'button text-center radius' %>
+		  </div>
 		<% end %>
 	</div>
 </div>
