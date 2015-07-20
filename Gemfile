@@ -13,6 +13,9 @@ gem 'pry'
 gem 'twitter', '~> 5.14.0'
 gem 'oauth'
 gem 'figaro'
+gem 'rails_12factor'
+gem 'bootstrap-sass', '~> 3.2.0'
+gem 'autoprefixer-rails'
 
 group :development, :test do
   gem 'byebug'
@@ -20,3 +23,4 @@ group :development, :test do
   gem 'spring'
 end
 
+ruby '2.2.1'
